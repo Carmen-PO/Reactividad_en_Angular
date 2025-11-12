@@ -1,0 +1,11 @@
+<h1>Componente Principal</h1>
+
+
+<button (click)="mostrarHijo = !mostrarHijo">
+  {{ mostrarHijo ? 'Ocultar' : 'Mostrar' }} componente hijo
+</button>
+
+<div *ngIf="mostrarHijo">
+  <app-componente2></app-componente2>
+</div>
+
